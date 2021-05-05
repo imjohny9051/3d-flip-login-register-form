@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="inner-box" id="card">
+
+          <div class="login-form">
+            <h2>LOGIN</h2>
+            <form>
+              <div class="area1">
+                <input type="email" class="input-box" placeholder="Email" required>
+                <input type="password" class="input-box" placeholder="Password" required>
+              </div>
+              <div class="area2">
+                <div class="checkBox">
+                  <input type="checkbox" id="login-rememberMe" name="rememberMe">
+                  <label for="login-rememberMe"> Remember Me</label>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+              </div>
+            </form>
+            <div class="area3">
+              <button type="button" class="flip-btn" onclick="openRegister()" name="button">Register Now</button>
+              <div class="divider"></div>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <div class="footer-section">
+              <a href="#" class="social-button facebook-btn">
+                <img src="facebook.png" alt="">
+                <span>Login with Facebook</span>
+              </a>
+              <a href="#" class="social-button google-btn">
+                <img src="google.png" alt="">
+                <span>Login with Google</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="register-form">
+            <h2>REGISTER</h2>
+            <form>
+              <div class="area1">
+                <input type="text" class="input-box" placeholder="Name" required>
+                <input type="email" class="input-box" placeholder="Email" required>
+                <input type="password" class="input-box" placeholder="Password" required>
+                <input type="password" class="input-box" placeholder="Confirm Password" required>
+              </div>
+              <div class="area2">
+                <div class="checkBox">
+                  <input type="checkbox" id="rememberMe" name="rememberMe">
+                  <label for="rememberMe"> Remember Me</label>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+              </div>
+            </form>
+            <div class="area3">
+              <button type="button" class="flip-btn" onclick="openLogin()" name="button">Existing user? Login</button>
+            </div>
+            <div class="footer-section">
+              <a href="#" class="social-button facebook-btn">
+                <img src="facebook.png" alt="">
+                <span>Login with Facebook</span>
+              </a>
+              <a href="#" class="social-button google-btn">
+                <img src="google.png" alt="">
+                <span>Login with Google</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- javascript for card flipping -->
+    <script type="text/javascript">
+      var card = document.getElementById("card");
+      function openRegister() {
+        card.style.transform = "rotateY(-180deg)";
+      }
+      function openLogin() {
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
+
+    <!-- Icons source -->
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+  </body>
+</html>
